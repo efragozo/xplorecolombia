@@ -18,3 +18,5 @@ github_username:  ederjosef7@@gmail.com
 
 # Build settings
 markdown: kramdown
+
+theme: jekyll-theme-cayman
