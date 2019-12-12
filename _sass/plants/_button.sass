@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------
+//  Plants >> Button
+// -----------------------------------------------------------------------
+.btn
+  display: inline-block
+  border: 2px solid white
+  padding: 0.5em 0.75em
+
+.btn-submit
+  color: white
+  font-family: $font-2
+  font-style: italic
+  background: $color-yellow
+  outline: none
+  border: 1px solid darken($color-yellow, 15%)
+  text-shadow: 0 -1px 1px darken($color-yellow, 15%)
+  letter-spacing: 0.125em
+  padding: 0.5em 1.5em
+
+  &:hover, &:focus
+    background: $color-title
+    border-color: $color-title
+    text-shadow: 0 -1px 1px $color-gray
+
+.btn-learn
+  color: $color-title
+  font-family: $font-2
+  font-style: italic
+  padding-bottom: 0.75em
+  background: url('/img/icon-arrow.png') no-repeat center bottom
+
+  &:hover, &:focus
+    color: $color-green

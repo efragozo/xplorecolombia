@@ -1,0 +1,41 @@
+<header class="cf fixed box">
+  <div class="box-container">
+    <a href="/" class="logo">
+        <img src="/img/logo-eurocentre.png" alt="Xplore eurocentres Logo" class="logo" width="190" >
+    </a>
+    <a href="/" class="logo">
+        <img src="/img/logo-xplorecolombia.png" alt="Xplore Colombia Logo" class="logo">
+    </a>
+    <div class="menu">
+      {% if page.identifier == 'home' %}
+      <a href="/" class="menu-link -current">Home</a>
+      {% else %}
+      <a href="/" class="menu-link">Home</a>
+      {% endif %}
+
+      {% if page.identifier == 'destinations' %}
+      <a href="/destinations/" class="menu-link -current">Destinations</a>
+      {% else %}
+      <a href="/destinations/" class="menu-link">Destinations</a>
+      {% endif %}
+      
+      {% if page.identifier == 'programs' %}
+      <a href="/programs/" class="menu-link -current">Spanish Program</a>
+      {% else %}
+      <a href="/programs/" class="menu-link">Spanish Program</a>
+      {% endif %}
+
+      {% if page.identifier == 'about-us' %}
+      <a href="/about-us/" class="menu-link -current">About us</a>
+      {% else %}
+      <a href="/about-us/" class="menu-link">About us</a>
+      {% endif %}
+
+      {% if page.identifier == 'contact-us' %}
+      <a href="/contact-us/" class="menu-link -current">Contact us</a>
+      {% else %}
+      <a href="/contact-us/" class="menu-link">Contact us</a>
+      {% endif %}
+    </div>
+  </div>
+</header>

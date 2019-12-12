@@ -1,0 +1,1 @@
+$("a[data-slider]").click(function(e){var a=$(this).attr("href");e.preventDefault(),$(a).toggleClass("slider-expanded")});

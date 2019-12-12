@@ -1,0 +1,20 @@
+// -----------------------------------------------------------------------
+//  Plants >> Layout
+// -----------------------------------------------------------------------
+
+.row
+  *zoom: 1
+  &:after,
+  &:before
+    content: ''
+    display: table
+  &:after
+    clear: both
+
+.column
+  float: left
+
+.column-half
+  width: 49.9%
+  overflow: hidden
+  min-height: 320px

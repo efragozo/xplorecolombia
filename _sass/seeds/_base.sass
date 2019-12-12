@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------
+//  Seeds >> Base
+// -----------------------------------------------------------------------
+
+// Viewport
+// -----------------------------------------------------------------------
+@-ms-viewport
+  width: device-width
+@viewport
+  width: device-width
+
+// Layout
+// -----------------------------------------------------------------------
+body
+  margin: 0
+  padding: 0
+
+// Universal box-sizing
+// Link: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+html
+  position: relative
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+*, *:before, *:after
+  -webkit-box-sizing: inherit
+  -moz-box-sizing: inherit
+  box-sizing: inherit
+
+// HTML5 Elements
+section, nav, article, aside, hgroup, header, footer, main,
+img, figure, figcaption, details, menu
+  display: block
+
+audio, video, canvas
+  display: inline-block

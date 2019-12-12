@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------
+//  Water >> Utilities
+// -----------------------------------------------------------------------
+
+.fixed
+  position: fixed
+  width: 100%
+
+.display-block
+  display: block
+
+.inlineblocked
+  display: inline-block
+  margin-left: 0.75em
+  &:first-child
+    margin-left: 0
+
+.clearfix, .cf
+  *zoom: 1
+  &:after,
+  &:before
+    content: ''
+    display: table
+  &:after
+    clear: both
+
+.full-width
+  width: 100%
+
+.full-width-height
+  display: block
+  width: 100%
+  position: absolute
+  top: 0
+  bottom: 0
+  z-index: 1

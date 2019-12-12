@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------------
+//  Plants >> Destination
+// -----------------------------------------------------------------------
+
+.destination
+  padding: 6em 0
+  background-repeat: none
+  background-size: cover
+  position: relative
+  transition: 0.2s all ease-in
+  overflow: hidden
+
+.destination-text
+  position: absolute
+  text-align: center
+  width: 100%
+  top: 42%
+  color: white
+  text-shadow: 0 0 10px rgba(0,0,0,.5)
+  z-index: 3
+
+.destination-image
+  display: block
+  width: 100%
+  position: absolute
+  top: 0
+  bottom: 0
+  z-index: 1
+  -webkit-filter: grayscale(100%)
+  filter: grayscale(100%)
+  transition: filter 0.1s ease-in
+
+.destination:hover .destination-image
+  -webkit-filter: grayscale(0%)
+  filter: grayscale(0%)

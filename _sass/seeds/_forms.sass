@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------------
+//  Seeds >> Forms
+// -----------------------------------------------------------------------
+
+fieldset
+  border: none
+  margin: 0
+  padding: 0
+
+button, input,
+select, textarea
+  font-family: inherit
+  font-size: 100%
+  margin: 0
+
+button, input
+  line-height: normal
+
+.form
+  label
+    display: block
+    padding-bottom: 0.25em
+    cursor: pointer
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea
+    color: $color-gray
+    border: 1px solid $color-gray
+    outline: none
+    width: 100%
+    padding: 0.5em
+
+    &:hover, &:focus
+      color: $color-title
+      border-color: $color-yellow
+    &:focus
+      background: lighten($color-yellow, 25%)
+
+input[type="submit"]
+  -webkit-appearance: button
+  cursor: pointer

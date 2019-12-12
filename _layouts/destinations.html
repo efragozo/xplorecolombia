@@ -1,0 +1,56 @@
+---
+layout: default
+title: Destinations
+identifier: destinations
+---
+
+<main class="page">
+  <div class="page-banner">
+    <div class="box-container">
+      <div class="page-heading grid">
+        <h1 class="grid-block text-centered">
+          <span class="text-stylish text-block text-spaced">Explore</span>
+          <span class="text-block text-uc text-spaced">
+            <a href="/destinations/" class="page-heading-link">Destinations</a>
+          </span>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <!-- .page-banner -->
+
+  <div class="page-showoff bg-black {{ page.permalink }}">
+    <div class="box-container grid">
+      <div class="grid-row">
+        <aside class="page-sidebar grid-block">
+          <ul class="menulist">
+            {% for post in site.posts %}
+            <li class="menulist-item">
+              {% if page.url == post.url %}
+              <a href="{{ post.url }}.html" class="-current">{{ post.title }}</a>
+              {% else %}
+              <a href="{{ post.url }}.html">{{ post.title }}</a>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </aside>
+
+        <div class="grid-block destination destination-{{page.permalink}}">
+          <span class="full-width-height tint tint-blue index-2"></span>
+          <img src="/img/dest-{{page.permalink}}.png" class="destination-image" alt="{{page.permalink}}">
+          <p class="text-big destination-text index-3">
+            <span class="text-stylish text-spaced text-block">Explore</span>
+            <span class="text-spaced text-uc">{{ page.title }}</span>
+          </p>
+        </div>
+        <!-- .destination -->
+      </div>
+    </div>
+  </div>
+  <!-- .page-showoff -->
+
+  <div class="page-content">
+    {{ content }}
+  </div>
+</main>

@@ -1,0 +1,61 @@
+// -----------------------------------------------------------------------
+//  Plants >> Page
+// -----------------------------------------------------------------------
+
+.page
+  padding-top: 6em
+  width: 100%
+
+.page-banner
+  background-size: cover
+  background-position: 50% 50%
+  background-repeat: none
+  width: 100%
+
+.page-heading
+  color: white
+  width: 30%
+  padding: 3em 0
+
+.page-heading-link
+  color: white
+  &:hover, &:focus
+    border-bottom: 2px solid white
+
+
+.page-sidebar
+  background: white
+  padding: 3em 0
+  width: 21.5%
+
+.page-showoff
+  color: white
+  text-align: center
+
+.page-showoff-capsule
+  padding: 0 3em
+
+.page-content
+  padding: 3em 0 0 0
+
+// Custom banner and heading colors
+#programs .page-heading
+  background: $color-green
+#programs .page-banner
+  background-color: ligthen($color-green, 15%)
+  background-image: url('/img/bg-ship.jpg')
+#destinations .page-heading
+  background: $color-blue
+#destinations .page-banner
+  background-color: lighten($color-blue, 15%)
+  background-image: url('/img/bg-destinations.jpg')
+#about-us .page-heading
+  background: $color-brown
+#about-us .page-banner
+  background-color: lighten($color-brown, 15%)
+  background-image: url('/img/bg-about.jpg')
+#contact-us .page-heading
+  background: $color-yellow
+#contact-us .page-banner
+  background-color: lighten($color-yellow, 15%)
+  background-image: url('/img/bg-contact.jpg')

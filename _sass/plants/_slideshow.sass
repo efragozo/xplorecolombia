@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------------
+//  Plants >> Slideshow
+// -----------------------------------------------------------------------
+
+.slideshow
+  width: 100%
+  height: 100%
+  list-style: none
+  margin: 0
+  padding: 0
+
+.slideshow-item
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  background-size: cover
+  background-position: 50% 50%
+  background-repeat: none
+  opacity: 0
+  animation: slideshowAnimation 28s linear infinite 0s
+.slideshow-item:after
+  content: ''
+  // background: transparent url('/img/pattern.png') repeat top left
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 100%
+
+// Slideshow custom images
+.slideshow-item:nth-child(1)
+  background-image: url('/img/banner-1.png')
+.slideshow-item:nth-child(2)
+  background-image: url('/img/banner-2.png')
+  animation-delay: 8s
+.slideshow-item:nth-child(3)
+  background-image: url('/img/banner-3.png')
+  animation-delay: 16s
+.slideshow-item:nth-child(4)
+  background-image: url('/img/banner-4.png')
+  animation-delay: 24s
+
+// For browsers that don't support 'opacity' or 'animation'
+.no-opacity .slideshow-item,
+.no-cssanimations .slideshow-item
+  opacity: 1

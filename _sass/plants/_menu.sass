@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------
+//  Plants >> Menu
+// -----------------------------------------------------------------------
+
+.menu-link
+  color: $color-text
+  font-size: 0.8em
+  text-transform: uppercase
+  display: inline-block
+  margin-left: 1.5em
+
+  &:hover, &:focus
+    color: $color-title
+
+// Custom colors for each menu-link
+.-current.menu-link
+  color: $color-title
+#destinations .-current
+  border-bottom: 2px solid $color-blue
+#programs .-current
+  border-bottom: 2px solid $color-green
+#about-us .-current
+  border-bottom: 2px solid $color-brown
+#contact-us .-current
+  border-bottom: 2px solid $color-yellow

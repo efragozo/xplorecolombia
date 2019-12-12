@@ -1,0 +1,63 @@
+---
+layout: page
+title: Destinations
+identifier: destinations
+---
+
+<div class="page-showoff bg-blue">
+  <div class="box-container grid">
+    <div class="grid-row">
+      <aside class="page-sidebar grid-block">
+        <ul class="menulist">
+          {% for post in site.posts %}
+          <li class="menulist-item">
+            <a href="{{ post.url }}.html">{{ post.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </aside>
+
+      <div class="grid-block page-showoff-capsule">
+        <p class="text-stylish text-big">
+          Explore Colombia is uniquely able to incorporate the cultural and touristic components of Colombia with both the corporate and academic sectors, to present a broader experience for the visitor.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- .page-showoff -->
+
+<div class="box bg-gray">
+  <div class="box-container text-centered">
+    <h2 class="text-white text-uc text-spaced">Colombian News</h2>
+    <span class="text-stylish text-spaced">Latest news about Colombia</span>
+  </div>
+</div>
+
+<div class="cards box">
+  <div class="box-container cf">
+    <div class="two-up blocks">
+      <a href="//contourstravel.com.au/destinations/colombia-receives-international-tourism-award/" class="block card">
+        <img src="/img/news-3.png" class="card-figure" alt="Bogota at night">
+        <p class="card-text">&#8220;Colombia receives International Tourism award&#8221;</p>
+      </a>
+      <a href="//online.wsj.com/ad/cityoftheyear" class="block card cf">
+        <img src="/img/news-4.jpg" class="card-figure" alt="Medellin: city of the year">
+        <p class="card-text">&#8220;Medellín: City of the year&#8221;</p>
+      </a>
+      <a href="//www.wingia.com/en/services/end_of_year_survey_2015/9/" class="block card cf">
+        <img src="/img/news-2.png" class="card-figure" alt="Colombia soccer team">
+        <p class="card-text">&#8220;Colombia is the happiest country in the world&#8221;</p>
+      </a>
+      <a href="//en.investinbogota.org/discover-bogota/general-information/awards-and-distinctions" class="block card cf">
+        <img src="/img/news-1.png" class="card-figure" alt="Bogota stadium">
+        <p class="card-text">&#8220;Bogotá: Awards and Distinctions&#8221;</p>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="box bg-gray">
+  <div class="box-container text-centered">
+    <h2 class="text-white text-uc text-spaced">ALLIANCES</h2>
+  </div>
+</div>
